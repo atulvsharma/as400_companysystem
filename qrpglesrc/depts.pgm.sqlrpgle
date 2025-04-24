@@ -1,4 +1,4 @@
-        **FREE
+        **free
         Ctl-Opt DFTACTGRP(*no);
 
         Dcl-Pr Employees ExtPgm;
