@@ -1,4 +1,4 @@
-
+        **FREE
         Ctl-Opt DFTACTGRP(*no);
 
         Dcl-Pr Employees ExtPgm;
@@ -7,8 +7,8 @@
 
       //---------------------------------------------------------------*
 
-      /include 'constants.rpgleinc'
-
+      //include 'constants.rpgleinc'
+	   Dcl-C F03        X'33';
 
 
       //---------------------------------------------------------------*
