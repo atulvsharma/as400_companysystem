@@ -91,7 +91,8 @@
             Dcl-S lCount  Int(5);
             Dcl-S Action  Char(1);
             Dcl-S LongAct Char(3);
-
+            Dcl-S DeptNo Char(3);
+            Dcl-S DeptName Char(30);
             ClearSubfile();
 
             EXEC SQL DECLARE deptCur CURSOR FOR
@@ -105,11 +106,16 @@
               dou (sqlstate <> '00000');
                 EXEC SQL
                   FETCH NEXT FROM deptCur
-                  INTO :Department.DEPTNO, :Department.DEPTNAME;
+                  INTO :DeptNo, :DeptName;
+                  
+                  //Department.DEPTNO, :Department.DEPTNAME;
 
                 if (sqlstate = '00000');
-                  XID   = Department.DEPTNO;
-                  XNAME = Department.DEPTNAME;
+                  //XID   = Department.DEPTNO;
+                  //XNAME = Department.DEPTNAME;
+                  XID   = DeptNo;
+                  XNAME = DeptName;
+
 
                   rrn += 1;
                   Write SFLDTA;
