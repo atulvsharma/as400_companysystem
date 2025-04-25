@@ -3,7 +3,7 @@ BIN_LIB=CMPSYS
 LIBLIST=$(BIN_LIB) DEVUSR
 SHELL=/QOpenSys/usr/bin/qsh
 
-all: mypgms.pgm.sqlrpgle
+all: mypgm.pgm.sqlrpgle
 
 ## Targets
 
